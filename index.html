@@ -12,6 +12,7 @@
       content="Juegos de mesa, Paleo, Código Secreto, Ciudadelas, Hitster, 7 Wonders"
     />
     <meta name="author" content="Samuel Jimena López" />
+    <!--Favicons:-->
     <link
       rel="apple-touch-icon"
       sizes="57x57"
@@ -94,7 +95,7 @@
         alt="Logo de la revista Game Yard con tipografía Old Style en color verde y sombreado rojizo"
         title="Logo de la revista Game Yard"
       />
-      <!--Mi intención con el dialog es un formulario de inicio de sesión. Como solo nos centramos en la arquitectura de la información en este proyecto lo dejo indicado porque nop puedo darle funcionalidad-->
+      <!--Mi intención con el dialog es un formulario de inicio de sesión. Como solo nos centramos en la arquitectura de la información en este proyecto lo dejo indicado porque no puedo darle funcionalidad-->
       <nav class="menu_principal">
         <ul>
           <li><a href="#">Inicio</a></li>
@@ -103,17 +104,16 @@
           <li><a href="#login-dialog">Iniciar sesión</a></li>
         </ul>
       </nav>
+      <!--¿Sería correcto darle a este dialog una sección aparte (habría 2 dialog: este y otro que apareciese con un supuesto botón de registro)?-->
       <dialog id="login-dialog">
         <form method="dialog">
           <h3>Iniciar sesión</h3>
-          <label for="username">Usuario:</label>
-          <input type="text" id="username" name="username" required>
-          <br>
-          <label for="password">Contraseña:</label>
-          <input type="password" id="password" name="password" required>
-          <br>
+          <label for="nombre_usuario">Usuario:</label>
+          <input type="text" id="nombre_usuario" name="username" required />
+          <label for="contraseña">Contraseña:</label>
+          <input type="password" id="contraseña" name="password" required />
           <button type="submit">Iniciar sesión</button>
-          <button type="reset">Cancelar</button>
+          <button type="reset">Volver</button>
         </form>
       </dialog>
     </header>
@@ -129,8 +129,8 @@
     </nav>
     <main>
       <article>
-          <h1>5 juegos de mesa que necesitas en tu colección</h1>
-          <div class="introduccion">
+        <h1>5 juegos de mesa que necesitas en tu colección</h1>
+        <div class="introduccion">
           <p>
             Con la marcha del verano, las lluvias y el frío no hacen más que
             acercarse. ¿Hay algo más apetecible que una tarde de juegos de mesa
@@ -171,7 +171,7 @@
                 de todo esto, el juego tiene disponibles diversas expansiones
                 para dinamizar la experiencia una vez la hayas dominado.
               </p>
-              <!--Los div de la fichas técnicas tendrásn más sentido cuando aprenda a aplicar estilos con CSS-->
+              <!--Los div de la fichas técnicas tendrán más sentido cuando aprenda a aplicar estilos con CSS-->
               <div class="ficha_tecnica" id="ficha_tecnica_7W">
                 <h3>Ficha técnica</h3>
                 <ul>
@@ -203,9 +203,9 @@
                 repertorio que abarca desde la primera mitad del siglo pasado
                 hasta nuestros días, personas de todas las edades pueden
                 disfrutar con él. La jugabilidad del juego se basa en adivinar
-                de qué año son los temazos planteados por las cartas de juego.
-                Si, además, te sabes el título de la canción y el artista serás
-                un verdadero <em>hitster</em>!
+                de qué año son los temas planteados por las cartas de juego. Si,
+                además, te sabes el título de la canción y el artista serás un
+                verdadero <em>hitster</em>!
               </p>
               <div class="ficha_tecnica" id="ficha_tecnica_Hit">
                 <h3>Ficha técnica</h3>
@@ -236,7 +236,7 @@
                 En tercer lugar, Ciudadelas. Se trata de un clásico de clásicos.
                 Con su primera aparición en el año 2000 en Alemania, ciudadelas
                 cautivó a los fans de los juegos de estrategia con sus
-                intrigantes rondas. El objetivo amplio del juego es contruir tu
+                intrigantes rondas. El objetivo amplio del juego es construir tu
                 ciudadela mejor y más rápido que el resto de jugadores. En cada
                 ronda, uno de los jugadores debe descartar a uno de los 8
                 personajes disponibles (cada uno con unas habilidades concretas)
@@ -268,7 +268,7 @@
                   />
                 </picture>
                 <figcaption>
-                  CÓdigo Secreto. El juego de las claves y el espionaje
+                  Código Secreto. El juego de las claves y el espionaje
                 </figcaption>
               </figure>
               <p>
@@ -279,7 +279,7 @@
                 deberá escoger por turnos las palabras que els corresponden en
                 base a la pista dada por el miembro de su equipo que conoce el
                 <strong>código secreto</strong>. Cuidado con equivocarse porque
-                podrías acabr haciéndole un favor al equipo enemigop o incluso
+                podrías acabar haciéndole un favor al equipo enemigop o incluso
                 perdiendo la partida si es que eliges la palabra prohibida.
               </p>
               <div class="ficha_tecnica" id="ficha_tecnica_CodSec">
@@ -306,20 +306,21 @@
                 <figcaption>Paleo, una aventura paleolítica</figcaption>
               </figure>
               <p>
-                En primer lugar, Paleo. Paleo es una joya. Es uno de esos juegos
-                que te obsesionan y dejas de sentir el paso del tiempo. Amanece
-                un nuevo día en tu grupo del paleolítico, ¿serás capaz de
-                alimentrar al grupo, conseguir materiales y protegerte de los
-                peligros? Con un sistema de juego cooperativo basado en niveles,
-                la experiencia de paleo os hará tomar decisiones conjuntas por
-                el bien de la tribu. Cuidado con ser demasiado cautos porque sin
-                riesgos vuestra tribu tampoco sobrevivirá. El juego termina
-                cuando logreís obtener todas las piezas de la pintura rupestre o
-                cuando hayáis acumulado 5 calaveras en base a vuestras
-                decisiones. Cada nivel ofrece un desafio diferente, fresco y
-                desafiante. Por si esto fuera poco, también tiene varias
-                expansiones disponibles (algunas de ellas de formagratuita). No
-                esperes más y lánzate a esta aventura paleolítca.
+                Finalmente y en primer lugar: Paleo. Paleo es una joya. Es uno
+                de esos juegos con los que que te obsesionas y dejas de percibir
+                el paso del tiempo. Amanece un nuevo día en tu grupo del
+                paleolítico, ¿serás capaz de alimentar al grupo, conseguir
+                materiales y protegerte de los peligros? Con un sistema de juego
+                cooperativo basado en niveles, la experiencia de paleo os hará
+                tomar decisiones conjuntas por el bien del grupo. Cuidado con
+                ser demasiado cautos porque sin riesgos vuestro grupo tampoco
+                sobrevivirá. El juego termina cuando logreís obtener todas las
+                piezas de la pintura rupestre o cuando hayáis acumulado 5
+                calaveras en base a vuestras decisiones. Cada nivel ofrece un
+                desafio diferente, fresco y que puede suponer un verdadero reto. Por si esto fuera poco,
+                también tiene varias expansiones disponibles (algunas de ellas
+                de forma gratuita). No esperes más y lánzate a esta aventura
+                paleolítca.
               </p>
               <div class="ficha_tecnica" id="ficha_tecnica_Paleo">
                 <h3>Ficha técnica</h3>
@@ -342,6 +343,7 @@
           id="Formulario_de_contacto"
           method="POST"
           enctype="application/x-www-form-urlencoded"
+          target="_self"
           name="form_cont_js"
         >
           <fieldset>
@@ -354,7 +356,7 @@
               required
               placeholder="alguien@example.com"
             />
-            <label for="numero_contacto"> Número de contact_info_footer: </label
+            <label for="numero_contacto"> Número de contacto: </label
             ><input
               type="number"
               name="numero_contacto"
@@ -366,9 +368,19 @@
           <fieldset>
             <legend>Información personal</legend>
             <label for="nombre_contacto"> Nombre: </label>
-            <input type="text" id="nombre_contacto" required name="nombre_contacto"/>
+            <input
+              type="text"
+              id="nombre_contacto"
+              required
+              name="nombre_contacto"
+            />
             <label for="apellidos_contacto"> Apellidos: </label>
-            <input type="text" id="apellidos_contacto" required name="apellidos_contacto"/>
+            <input
+              type="text"
+              id="apellidos_contacto"
+              required
+              name="apellidos_contacto"
+            />
           </fieldset>
           <fieldset>
             <legend>Destinatario</legend>
