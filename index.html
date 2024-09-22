@@ -1,33 +1,435 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Artículo de opinión sobre juegos de mesa enmarcado dentro de la revista temática Game Yard. El artículo ofrece un ranking de 5 juegos de mesa seleccionados por el autor">
-    <meta name="keywords" content="Juegos de mesa, Paleo, Código Secreto, Ciudadelas, Hitster, 7 Wonders">
-    <meta name="author" content="Samuel Jimena López">
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="assets/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
-    <link rel="manifest" href="assets/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    <title> Game Yard. Tu revista de juegos</title>
-    
-</head>
-<body>
-    <picture srcset=></picture>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Artículo de opinión sobre juegos de mesa enmarcado dentro de la revista temática Game Yard. El artículo ofrece un ranking de 5 juegos de mesa seleccionados por el autor"
+    />
+    <meta
+      name="keywords"
+      content="Juegos de mesa, Paleo, Código Secreto, Ciudadelas, Hitster, 7 Wonders"
+    />
+    <meta name="author" content="Samuel Jimena López" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="assets/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="assets/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="assets/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="assets/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="assets/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="assets/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="assets/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="assets/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="assets/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="assets/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="assets/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Game Yard. Tu revista de juegos</title>
+  </head>
+  <body>
+    <header>
+      <img
+        src="/assets/game_yard_logo.png"
+        alt="Logo de la revista Game Yard con tipografía Old Style en color verde y sombreado rojizo"
+        title="Logo de la revista Game Yard"
+      />
+      <!--Mi intención con el dialog es un formulario de inicio de sesión. Como solo nos centramos en la arquitectura de la información en este proyecto lo dejo indicado porque nop puedo darle funcionalidad-->
+      <nav class="menu_principal">
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Catálogo</a></li>
+          <li><a href="#">Nosotros</a></li>
+          <li><a href="#login-dialog">Iniciar sesión</a></li>
+        </ul>
+      </nav>
+      <dialog id="login-dialog">
+        <form method="dialog">
+          <h3>Iniciar sesión</h3>
+          <label for="username">Usuario:</label>
+          <input type="text" id="username" name="username" required>
+          <br>
+          <label for="password">Contraseña:</label>
+          <input type="password" id="password" name="password" required>
+          <br>
+          <button type="submit">Iniciar sesión</button>
+          <button type="reset">Cancelar</button>
+        </form>
+      </dialog>
+    </header>
+    <nav class="menu_interno" id="menu_22092024">
+      <h2>Menú de navegación del artículo</h2>
+      <ul>
+        <li><a href="#7_wonders">Número 5</a></li>
+        <li><a href="#Hitster">Número 4</a></li>
+        <li><a href="#Ciudadelas">Número 3</a></li>
+        <li><a href="#Codigo_secreto">Número 2</a></li>
+        <li><a href="#Paleo">Número 1</a></li>
+      </ul>
+    </nav>
+    <main>
+      <article>
+          <h1>5 juegos de mesa que necesitas en tu colección</h1>
+          <div class="introduccion">
+          <p>
+            Con la marcha del verano, las lluvias y el frío no hacen más que
+            acercarse. ¿Hay algo más apetecible que una tarde de juegos de mesa
+            en el calor del hogar? Probablemente no se te ocurra nada mejor y al
+            equipo de Game Yard tampoco. Por eso os traemos un
+            <em lang="en">ranking</em> de 5 juegos que necesitas conocer para
+            darle diversión y variedad a esas tardes de juegos. Todos estos
+            juegos son especiales a su manera y no podemos aconsejaros otra cosa
+            que probarlos todos. Sin más preámbulos, ¡vamos a ello!
+          </p>
+        </div>
+        <section class="ranking">
+          <ol reversed>
+            <li>
+              <h2 id="7_wonders">7 Wonders</h2>
+              <figure>
+                <picture>
+                  <img
+                    src="assets/7wonders.png"
+                    alt="Juego de mesa 7 Wonders edición básica con todos los componentes del juego desplegados"
+                    title="Juego de mesa 7 Wonders"
+                  />
+                </picture>
+                <figcaption>
+                  7 Wonders. ¿Logrará tu maravilla sobrevivir a los avatares del
+                  tiempo?
+                </figcaption>
+              </figure>
+              <p>
+                En primer lugar tenemos 7 Wonders. El juego que presume de ser
+                el <strong>más premiado del mundo</strong>. Se trata de un juego
+                competititvo en el que podrás luchar con tus amigos por ver
+                quién encumbra su ciudad tras 3 eras de desarrollo. Ambientado
+                en ciudades clásicas de renombre y con un sistema de puntuación
+                basado en 5 aspectos diferentes (maravillas, edificifación,
+                guerra, ciencia y comercio), 7 Wonders te ofrece una oprtunidad
+                nueva en cada partida para probar diferentes estrategias. Además
+                de todo esto, el juego tiene disponibles diversas expansiones
+                para dinamizar la experiencia una vez la hayas dominado.
+              </p>
+              <!--Los div de la fichas técnicas tendrásn más sentido cuando aprenda a aplicar estilos con CSS-->
+              <div class="ficha_tecnica" id="ficha_tecnica_7W">
+                <h3>Ficha técnica</h3>
+                <ul>
+                  <li><strong>Número de jugadores: </strong>3-7</li>
+                  <li><strong>Edad mínima recomendada: </strong>10+</li>
+                  <li>
+                    <strong>Tiempo de juego aproximado: </strong> 30 minutos
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <h2 id="Hitster">Hitster</h2>
+              <figure>
+                <picture>
+                  <img
+                    src="assets/hitster.webp"
+                    alt="Juego de mesa Hitster con todos sus componentes desplegados"
+                    title="Juego de mesa Hitster"
+                  />
+                </picture>
+                <figcaption>Hitster. ¿Cuántas te sabes?</figcaption>
+              </figure>
+              <p>
+                En segundo lugar, Hitster nos ofrece una experiencia de juego
+                fresca, dinámica y que va de la mano de la tecnología.
+                Necesitarás un dispositivo capaz de leer códigos QR y muchas
+                ganas de escuchar verdaderos <em lang="en"> hits</em>. Con un
+                repertorio que abarca desde la primera mitad del siglo pasado
+                hasta nuestros días, personas de todas las edades pueden
+                disfrutar con él. La jugabilidad del juego se basa en adivinar
+                de qué año son los temazos planteados por las cartas de juego.
+                Si, además, te sabes el título de la canción y el artista serás
+                un verdadero <em>hitster</em>!
+              </p>
+              <div class="ficha_tecnica" id="ficha_tecnica_Hit">
+                <h3>Ficha técnica</h3>
+                <ul>
+                  <li><strong>Número de jugadores:</strong> 2-10</li>
+                  <li><strong>Edad mínima recomendada:</strong> 16+</li>
+                  <li>
+                    <strong>Tiempo de juego aproximado:</strong> 30 minutos
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <h2 id="Ciudadelas">Ciudadelas</h2>
+              <figure>
+                <picture>
+                  <img
+                    src="https://th.bing.com/th/id/OIP.1cP79wd8BfZA1tuGYabV7gAAAA?rs=1&pid=ImgDetMain"
+                    alt="Juego de mesa Ciudadelas edición clásica"
+                    title="Juego de mesa Ciudadelas"
+                  />
+                </picture>
+                <figcaption>
+                  Ciudadelas. Riquezas, ambición, intriga.
+                </figcaption>
+              </figure>
+              <p>
+                En tercer lugar, Ciudadelas. Se trata de un clásico de clásicos.
+                Con su primera aparición en el año 2000 en Alemania, ciudadelas
+                cautivó a los fans de los juegos de estrategia con sus
+                intrigantes rondas. El objetivo amplio del juego es contruir tu
+                ciudadela mejor y más rápido que el resto de jugadores. En cada
+                ronda, uno de los jugadores debe descartar a uno de los 8
+                personajes disponibles (cada uno con unas habilidades concretas)
+                sin saber cuál se descarta. Por tunos, los demás jugadores
+                eligen qué personaje serán esa ronda y tratarán de avanzar con
+                su ciudadela. El asesino, el ladrón, el mago, el condotiero, ...
+                ¿Qué habrá escogido cada jugador?¿Te asesinarán en esta ronda?
+                ¿Te robarán tu oro? ¿Destruirán tus edificios?
+              </p>
+              <div class="ficha_tecnica" id="ficha_tecnica_Ciudadelas">
+                <h3>Ficha técnica</h3>
+                <ul>
+                  <li><strong>Número de jugadores:</strong> 2-7</li>
+                  <li><strong>Edad mínima recomendada:</strong> 14+</li>
+                  <li>
+                    <strong>Tiempo de juego aproximado:</strong> 45 minutos
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <h2 id="Codigo_secreto">Codigo Secreto</h2>
+              <figure>
+                <picture>
+                  <img
+                    src="https://www.eljuegodemesa.com/wp-content/uploads/2019/07/codigo-secreto-juego-mesa.jpg"
+                    alt="Juego de mesa Código Secreto edición normal"
+                    title="Juego de mesa Código Secreto"
+                  />
+                </picture>
+                <figcaption>
+                  CÓdigo Secreto. El juego de las claves y el espionaje
+                </figcaption>
+              </figure>
+              <p>
+                En cuarto lugar, Código Secreto. Preparate para una dinámica de
+                grupo muy especial en la que tendrás que hacer que tus
+                compañeros acierten en sus decisiones con tan solo una palabra.
+                Con un montón de palabras dispersas por la mesa, cada equipo
+                deberá escoger por turnos las palabras que els corresponden en
+                base a la pista dada por el miembro de su equipo que conoce el
+                <strong>código secreto</strong>. Cuidado con equivocarse porque
+                podrías acabr haciéndole un favor al equipo enemigop o incluso
+                perdiendo la partida si es que eliges la palabra prohibida.
+              </p>
+              <div class="ficha_tecnica" id="ficha_tecnica_CodSec">
+                <h3>Ficha técnica</h3>
+                <ul>
+                  <li><strong>Número de jugadores:</strong>4-12</li>
+                  <li><strong>Edad mínima recomendada:</strong> 14+</li>
+                  <li>
+                    <strong>Tiempo de juego aproximado:</strong> 30 minutos
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <h2 id="Paleo">Paleo</h2>
+              <figure>
+                <picture>
+                  <img
+                    src="assets/paleo.jpg"
+                    alt="Juego de mesa Paleo edición básica"
+                    title="Juego de mesa Paleo"
+                  />
+                </picture>
+                <figcaption>Paleo, una aventura paleolítica</figcaption>
+              </figure>
+              <p>
+                En primer lugar, Paleo. Paleo es una joya. Es uno de esos juegos
+                que te obsesionan y dejas de sentir el paso del tiempo. Amanece
+                un nuevo día en tu grupo del paleolítico, ¿serás capaz de
+                alimentrar al grupo, conseguir materiales y protegerte de los
+                peligros? Con un sistema de juego cooperativo basado en niveles,
+                la experiencia de paleo os hará tomar decisiones conjuntas por
+                el bien de la tribu. Cuidado con ser demasiado cautos porque sin
+                riesgos vuestra tribu tampoco sobrevivirá. El juego termina
+                cuando logreís obtener todas las piezas de la pintura rupestre o
+                cuando hayáis acumulado 5 calaveras en base a vuestras
+                decisiones. Cada nivel ofrece un desafio diferente, fresco y
+                desafiante. Por si esto fuera poco, también tiene varias
+                expansiones disponibles (algunas de ellas de formagratuita). No
+                esperes más y lánzate a esta aventura paleolítca.
+              </p>
+              <div class="ficha_tecnica" id="ficha_tecnica_Paleo">
+                <h3>Ficha técnica</h3>
+                <ul>
+                  <li><strong>Número de jugadores:</strong> 2-4</li>
+                  <li><strong>Edad mínima recomendada:</strong> 12+</li>
+                  <li>
+                    <strong>Tiempo de juego aproximado:</strong> 90 minutos
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ol>
+        </section>
+      </article>
+      <section id="Formulario_contacto">
+        <h3>Contacta con nosotros</h3>
+        <form
+          action="#scrip_inventado.js"
+          id="Formulario_de_contacto"
+          method="POST"
+          enctype="application/x-www-form-urlencoded"
+          name="form_cont_js"
+        >
+          <fieldset>
+            <legend>Información de contacto</legend>
+            <label for="email_contacto"> Correo electrónico: </label
+            ><input
+              type="email"
+              name="email_contacto"
+              id="email_contacto"
+              required
+              placeholder="alguien@example.com"
+            />
+            <label for="numero_contacto"> Número de contact_info_footer: </label
+            ><input
+              type="number"
+              name="numero_contacto"
+              id="numero_contacto"
+              required
+              placeholder="Válido prefijo +34"
+            />
+          </fieldset>
+          <fieldset>
+            <legend>Información personal</legend>
+            <label for="nombre_contacto"> Nombre: </label>
+            <input type="text" id="nombre_contacto" required name="nombre_contacto"/>
+            <label for="apellidos_contacto"> Apellidos: </label>
+            <input type="text" id="apellidos_contacto" required name="apellidos_contacto"/>
+          </fieldset>
+          <fieldset>
+            <legend>Destinatario</legend>
+            <label for="departamento_contacto">
+              Departamento:
+              <input
+                list="departamentos_lista"
+                id="departamento_contacto"
+                required
+            /></label>
+            <datalist id="departamentos_lista">
+              <option value="Quejas y reclamaciones"></option>
+              <option value="Felicitaciones y premios"></option>
+              <option value="Sugerencias"></option>
+              <option value="Contenidos"></option>
+              <option value="Publicidad y relaciones públicas"></option>
+            </datalist>
+            <label for="extension"> Extensión (si la conoce): : </label>
+            <input type="number" id="extension" />
+          </fieldset>
+          <fieldset>
+            <legend>Mensaje de contacto</legend>
+            <label for="asunto">Asunto: </label
+            ><input type="text" id="asunto" required />
+            <textarea
+              id="mensaje"
+              placeholder="Por favor, escriba aquí su mensaje con una extensión máxima de 2000 caracteres"
+              maxlength="2000"
+              rows="20"
+              cols="100"
+            ></textarea>
+          </fieldset>
+          <fieldset>
+            <label for="privacidad">
+              Acepto la <a href="">politica de privacidad</a> y el
+              <a href="">tratamiento de datos</a> personales</label
+            ><input type="checkbox" required id="privacidad" />
+          </fieldset>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <h3>Información de contacto</h3>
+      <ul class="contact_info" id="contact_info_footer">
+        <li>
+          Avenida inventada nº38 (edificio inventalia), Madrid, Madrid, España
+        </li>
+        <li>913989 | +34 645397</li>
+        <li>alguien@example.com</li>
+      </ul>
+      <p></p>
+      <h3>Redes sociales</h3>
+      <p>¡Siguenos en redes!</p>
+      <ul class="social_box" id="social_box_footer">
+        <li><a href="">X</a></li>
+        <li><a href="">Instagram</a></li>
+        <li><a href="">Tik Tok</a></li>
+      </ul>
+      <h3>Aviso de copyright</h3>
+      <p>Game Yard S.L. © 2018-2024</p>
+    </footer>
+  </body>
 </html>
